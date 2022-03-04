@@ -1,0 +1,7 @@
+<%# GET "lists/42/bookmarks/new" %>
+<%# POST "lists/42/bookmarks" %>
+<%= simple_form_for [@list, @bookmark] do |f| %>
+  <%= f.input :comment %>
+  <%= f.association :movie %>
+  <%= f.submit %>
+<% end %>
